@@ -1,5 +1,5 @@
 {% set name = "enlopy" %}
-{% set version = "0.1.dev11" %}
+{% set version = "0.1.dev12" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f18898f20017f1159a74c21f593e7b3df5656da83836baa841e27b0136acdea
+  sha256: c0b6b7b2fe99208bd5be31e0f90baadf1eff2a3f9c152d99bed6a3bb040257a3
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - python
     - setuptools >=3.3
   run:
-    - matplotlib >=2.0
+    - matplotlib >=2.2
     - numpy >=1.12
     - pandas >=0.20
     - python
