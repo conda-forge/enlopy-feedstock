@@ -1,5 +1,5 @@
 {% set name = "enlopy" %}
-{% set version = "0.1.dev12" %}
+{% set version = "0.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0b6b7b2fe99208bd5be31e0f90baadf1eff2a3f9c152d99bed6a3bb040257a3
+  sha256: df23ead4b235ba6b48462bd1d7aa8578cc2859e2f2db4f442f6adf859c779574
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
 
 requirements:
@@ -34,7 +34,7 @@ about:
   home: https://github.com/kavvkon/enlopy
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE 
+  license_file: LICENSE
   summary: Python library with methods to generate, process, analyze, and plot energy related timeseries.
   doc_url: https://enlopy.readthedocs.io/
   dev_url: https://www.github.com/kavvkon/enlopy
